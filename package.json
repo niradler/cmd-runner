@@ -1,12 +1,21 @@
 {
-  "name": "node-runnder",
+  "name": "cmd-runner",
   "version": "0.0.1",
-  "description": "",
+  "description": "run script with node permissions.",
   "main": "index.js",
+  "bin": {
+    "cmd-runner": "index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "keywords": [],
   "author": "Nir Adler <niradler55@email.com> (https://niradler.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.1"
+  }
 }
